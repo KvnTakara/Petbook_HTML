@@ -72,9 +72,9 @@ main {
 /*#region FEED COLUMN*/
 .feed-column {
     width: 700px;
-    height: 1000px;
-    padding-top: 20px;
+    padding: 20px;
     display: block;
+    background-color: rgb(238, 238, 238);
 }
 
     .vertical-feed {
@@ -269,9 +269,11 @@ main {
         }
 
         #post-01 {
-            background-image: url(https://claudia.abril.com.br/wp-content/uploads/2020/01/meme-pinscher.jpg?quality=70&strip=all);
+            background-image: url(https://i.pinimg.com/originals/95/61/04/956104c81cb19aabeb13d9090a8f2d0c.jpg);
             background-size: contain;
             background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0);
         }
 
         .post-impressions {
@@ -336,7 +338,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            row-gap: 5px;
+            row-gap: 10px;
             margin: 5px 15px 5px 15px;
         }
 
@@ -540,3 +542,107 @@ main {
             background-color: rgba(255, 255, 255, 0.5);
         }
 /*#endregion CONTACT COLUMN*/
+
+/*#region PETS PROFILE*/
+#profile-marley {
+    background-image: url(https://s.glbimg.com/og/rg/f/original/2011/12/21/owen-wilson.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-dogao {
+    background-image: url(https://teleguiado.com/wp-content/uploads/2015/09/e2e2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-gary {
+    background-image: url(https://i1.sndcdn.com/artworks-000327955845-vtks88-t500x500.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-scooby {
+    background-image: url(https://tm.ibxk.com.br/2021/05/26/26091406020087.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-jake {
+    background-image: url(https://gartic.com.br/imgs/mural/ar/ariel___/jake-o-cao.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-stuart {
+    background-image: url(https://www.tvpop.com.br/wp-content/uploads/2022/01/o-pequeno-stuart-little-sessao-de-sabado-01-01-foto-reproducao-tvpop.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-stitch {
+    background-image: url(https://i0.wp.com/tracklist.com.br/wp-content/uploads/2023/04/lilo-stitch.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-garfield {
+    background-image: url(https://assets.deutschlandfunk.de/FILE_357d3ca8409a2c0c410823e75ba1bc94/1920x1080.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-emily {
+    background-image: url(https://is5-ssl.mzstatic.com/image/thumb/0dGDcUKl2f5CeH5Ge3E5_w/1200x675.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-gizmo {
+    background-image: url(https://www.gamereactor.pt/media/04/_3840443b.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-rango {
+    background-image: url(https://i0.wp.com/cloud.estacaonerd.com/wp-content/uploads/2021/04/12184518/Rango.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-perry {
+    background-image: url(https://i.ytimg.com/vi/imSiXiqtMS0/maxresdefault.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-goddard {
+    background-image: url(https://static.wikia.nocookie.net/jimmyneutron/images/b/b8/Jimmy_Timmy_Power_Hour_Decimator_Goddard_close_up.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-boss {
+    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2018/07/26074143/ilha-dos-cachorros-2.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-coragem {
+    background-image: url(https://feedcurioso.com.br/wp-content/uploads/2022/08/coragem-o-cao-covarde.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-snoopy {
+    background-image: url(https://midia.gruposinos.com.br/_midias/jpg/2015/08/11/peanuts_pub_still_a02_f2_0-981965.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-snowbell {
+    background-image: url(https://www.petmag.com.br/app/uploads/petteca/famosos/8458/snowbell-01.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+/*#endregion PETS PROFILE*/
