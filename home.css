@@ -84,6 +84,7 @@ main {
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: space-between;
+        overflow: hidden;
         border-radius: 10px;
         background: #D9D9D9;
     }
@@ -126,16 +127,26 @@ main {
         }
 
             .stories-framer {
-                position: relative;
+                overflow: hidden;
                 width: 150px;
                 height: 230px;
                 border-radius: 10px;
-                background-color: rgb(92, 92, 92);
+                color: white;
+                display: initial;
             }
 
-            .stories-framer:hover {
-                background-color: rgba(0, 0, 0, .7);
-            }    
+                .stories-content {
+                    transition: .2s;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+
+                .stories-content:hover {
+                    scale: 1.1;
+                    background-color: rgba(0, 0, 0, .7);
+                }
 
     .yourpost-feed {
         width: 100%;
@@ -270,6 +281,32 @@ main {
 
         #post-01 {
             background-image: url(https://i.pinimg.com/originals/95/61/04/956104c81cb19aabeb13d9090a8f2d0c.jpg);
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #post-02 {
+            background-image: url(https://conteudo.imguol.com.br/c/entretenimento/e4/2021/12/03/pisco-o-gato-que-parece-o-gato-de-botas-do-shrek-2-1638547040040_v2_1x1.jpg);
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #comments-post-02 {
+            width: 300px;
+            height: 300px;
+            background-image: url(https://pbs.twimg.com/media/FnhljBnXEAAHZbm.jpg);
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #post-03 {
+            background-image: url(https://i.pinimg.com/originals/09/74/09/097409ad8d8ca256c91a0fe6bf963598.jpg);
             background-size: contain;
             background-position: 50% 50%;
             background-repeat: no-repeat;
@@ -543,9 +580,61 @@ main {
         }
 /*#endregion CONTACT COLUMN*/
 
+/*#region PETS STORIES*/
+#stories- {
+    background-image: url();
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#stories-galinho {
+    background-image: url(https://rollingstone.uol.com.br/media/_versions/galinho-chicken-little-disney-animacao-reproducao_widelg.jpg);
+    background-position: 40% 50%;
+    background-size: cover;
+}
+#stories-milu {
+    background-image: url(https://i0.wp.com/petcaramelo.com/wp-content/uploads/2018/06/milu-tim-tim.png);
+    background-position: 70% 50%;
+    background-size: cover;
+}
+#stories-lion {
+    background-image: url(https://44.media.tumblr.com/b6611c957195fe9fcf2dfa99ad7955c0/tumblr_p66n3zwltg1tandono2_r1_540.gif);
+    background-position: 20% 50%;
+    background-size: cover;
+}
+#stories-ginko {
+    background-image: url(https://pbs.twimg.com/media/Ft6uWMZX0AAYq4h.jpg);
+    background-position: 20% 50%;
+    background-size: cover;
+}
+/*#endregion PETS STORIES*/
+
 /*#region PETS PROFILE*/
 #profile-marley {
     background-image: url(https://s.glbimg.com/og/rg/f/original/2011/12/21/owen-wilson.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-botas {
+    background-image: url(https://www.ofuxico.com.br/wp-content/uploads/2022/12/gato-de-botas-sorrindo-com-espada-em-punho-no-chao-1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-lobo {
+    background-image: url(https://img.wattpad.com/userbg/Unoriginal_Jackass12.72109.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-burro {
+    background-image: url(https://orisval.files.wordpress.com/2014/08/shrek-e-o-burro.jpg);
+    background-position: 30% 50%;
+    background-size: cover;
+}
+
+#profile-darwin {
+    background-image: url(https://img.quizur.com/f/img60078a973fa7f9.29838404.jpg);
     background-position: 50% 50%;
     background-size: cover;
 }
