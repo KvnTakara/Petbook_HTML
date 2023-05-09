@@ -141,6 +141,7 @@ main {
                     width: 100%;
                     height: 100%;
                     border-radius: 10px;
+                    background-color: gray;
                 }
 
                 .stories-content:hover {
@@ -148,10 +149,29 @@ main {
                     background-color: rgba(0, 0, 0, .7);
                 }
 
+                .my-stories-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    row-gap: 5px;
+                    padding-top: 15px;
+                }
+
+                    .my-stories {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: rgb(36, 156, 255);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
     .yourpost-feed {
         width: 100%;
         height: 110px;
-        background: rgb(150, 150, 150);
+        background: rgb(192, 192, 192);
         margin-top: 20px;
         border-radius: 10px;
         display: flex;
@@ -170,6 +190,7 @@ main {
         }
 
             .profile {
+                cursor: pointer;
                 min-width: 40px;
                 max-width: 40px;
                 min-height: 40px;
@@ -180,6 +201,26 @@ main {
                 justify-content: center;
                 background-color: rgb(138, 138, 138);
             }
+
+            .profile:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+
+            .online {
+                display: flex;
+                align-items: end;
+                justify-content: end;
+            }
+
+                .profile-online {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: #000000;
+                    border-width: 3px;
+                    border-style: solid;
+                    background-color: greenyellow;
+                }
 
             .post-box {
                 width: 605px;
@@ -313,6 +354,22 @@ main {
             background-color: rgb(0, 0, 0);
         }
 
+        #post-05 {
+            background-image: url(https://i0.wp.com/indutalks.com.br/wp-content/uploads/2021/02/castelo-ra-tim-bum-fonte-revista-galileu.jpg);
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #post-06 {
+            background-image: url(https://cdn.discordapp.com/attachments/1003898618916380795/1105327378630180934/image.png);
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-color: rgb(0, 0, 0);
+        }
+
         .post-impressions {
             display: flex;
             align-items: center;
@@ -379,6 +436,10 @@ main {
             margin: 5px 15px 5px 15px;
         }
 
+        .post-comments li:hover {
+            text-decoration: underline;
+        }
+
             .user-comment {
                 display: flex;
                 align-items: start;
@@ -386,26 +447,44 @@ main {
                 column-gap: 5px;
             }
 
-                .user-name-comment {
+                .name-comment-interact {
                     display: flex;
                     flex-direction: column;
-                    row-gap: 2px;
-                    padding: 10px;
-                    background-color: rgb(238, 238, 238);
-                    border-radius: 20px;
                 }
 
-                    .name-comment {
-                        font-size: 15px;
+                    .name-comment-space {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 2px;
+                        padding: 10px;
+                        background-color: rgb(238, 238, 238);
+                        border-radius: 20px;
                     }
 
-                    .comment-content {
-                        font-size: 17px;
+                        .name-comment {
+                            cursor: pointer;
+                            font-size: 15px;
+                        }
+
+                        .comment-content {
+                            font-size: 17px;
+                        }
+
+                    .interaction-space {
+                        display: flex;
+                        column-gap: 20px;
+                        padding: 5px;
+                        font-size: 14px;
+                    }
+
+                    .interaction-space a:hover {
+                        text-decoration: underline;
                     }
 
             .comment-here {
                 display: flex;
                 column-gap: 5px;
+                margin-bottom: 5px;
             }
 
                 .comment-box {
@@ -581,7 +660,7 @@ main {
 /*#endregion CONTACT COLUMN*/
 
 /*#region PETS STORIES*/
-#stories- {
+#my-stories {
     background-image: url();
     background-position: 50% 50%;
     background-size: cover;
@@ -615,6 +694,12 @@ main {
     background-size: cover;
 }
 
+#profile-laika {
+    background-image: url(https://www.slashfilm.com/img/gallery/guardians-of-the-galaxy-vol-3s-cosmo-is-based-on-a-real-and-tragic-dog-named-laika/l-intro-1682979770.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
 #profile-botas {
     background-image: url(https://www.ofuxico.com.br/wp-content/uploads/2022/12/gato-de-botas-sorrindo-com-espada-em-punho-no-chao-1.jpg);
     background-position: 50% 50%;
@@ -635,6 +720,36 @@ main {
 
 #profile-darwin {
     background-image: url(https://img.quizur.com/f/img60078a973fa7f9.29838404.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-lumalee {
+    background-image: url(https://i.redd.it/ky1crf7cpuma1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-remy {
+    background-image: url(https://pm1.narvii.com/6324/71ad536b28ec83adc5070a41d26ce288d091473d_00.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-celeste {
+    background-image: url(https://pbs.twimg.com/media/FWWpQHXWYAAggeA.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-lilica {
+    background-image: url(https://i.ytimg.com/vi/2kXjizEb98s/maxresdefault.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#profile-cnn {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/CNN_International_logo.svg/200px-CNN_International_logo.svg.png);
     background-position: 50% 50%;
     background-size: cover;
 }
